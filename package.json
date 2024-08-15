@@ -1,0 +1,20 @@
+{
+  "name": "expensetracker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "server": "npm run watch --prefix server",
+    "client": "npm run start --prefix client",
+    "watch": "concurrently -n server,client -c green,blue \"npm run server\" \"yarn client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  }
+}
